@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavBar = () => {
+const NavBar = ({ score, topScore }) => {
   return (
     <>
       <nav className="navbar navbar-light bg-light ">
@@ -10,7 +10,9 @@ const NavBar = () => {
           </a>
         </div>
         <div className="col-md-4 text-center">Click an image to begin!</div>
-        <div className="col-md-4 text-center">Score: 0 | Top Score: 0</div>
+        <div className="col-md-4 text-center">
+          Score: {score} | Top Score: {topScore}
+        </div>
       </nav>
     </>
   );

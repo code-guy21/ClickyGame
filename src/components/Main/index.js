@@ -1,8 +1,7 @@
 import React from "react";
-
 import ImageGrid from "../ImageGrid";
 
-const Main = () => {
+const Main = ({ updateScore }) => {
   return (
     <div className="flex-fill">
       <div className="col12">
@@ -16,7 +15,7 @@ const Main = () => {
       </div>
       <div className="col-12">
         <div className="container">
-          <ImageGrid />
+          <ImageGrid updateScore={updateScore} />
         </div>
       </div>
     </div>

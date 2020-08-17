@@ -1,7 +1,7 @@
 import React from "react";
 import Images from "../utils/Images";
 
-const ImageGrid = () => {
+const ImageGrid = ({ updateScore }) => {
   return (
     <>
       {Images.shuffle().map((row, i) => {
@@ -21,6 +21,7 @@ const ImageGrid = () => {
                       backgroundImage: `url(${col.url})`,
                       backgroundSize: "cover",
                     }}
+                    onClick={() => updateScore(col.id)}
                   ></button>
                 </div>
               );
