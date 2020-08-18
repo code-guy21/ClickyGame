@@ -34,7 +34,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid h-100 d-flex flex-column p-0">
+      <div
+        className="container-fluid h-100 d-flex flex-column"
+        style={{ padding: "110px 0px 0px 0px" }}
+      >
         <NavBar score={this.state.score} topScore={this.state.topScore} />
         <Main updateScore={this.handleClick} />
         <Footer />

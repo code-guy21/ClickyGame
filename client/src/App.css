@@ -1,0 +1,9 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #009ddc, #feb824);
+  font-family: "Indie Flower", cursive;
+}
+
+#root {
+  height: 100%;
+}
